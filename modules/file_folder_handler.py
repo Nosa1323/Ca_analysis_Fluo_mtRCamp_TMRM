@@ -18,13 +18,13 @@ def file_extraction(search_string):
         signal_type = str(output_folder_list[1].split('.')[0].split(' ')[0])
         type_list.add(signal_type)
 
-        if signal_type=='Small':
+        if signal_type=='Small' or signal_type=='ATP_mtRCaMP_Ctrl':
             array = np.arange(0.01,len(f)*0.01, 0.01)
         else:
             array = np.arange(0,len(f)*0.01, 0.01)
 
         f ['filename'] = filename
-        f ['norm_time'] = array
+        f ['norm_time'] = pd.Series(array)
         f ['signal_type'] = signal_type
 
         df = pd.concat ([df, f])
