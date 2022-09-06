@@ -11,7 +11,7 @@ def file_extraction(search_string):
     type_list = set()
     for find_files in filepaths:
         
-        f = pd.read_csv(find_files, sep = ';', decimal= ',')
+        f = pd.read_csv(find_files, sep =';', decimal= ',')
 
         output_folder_list = find_files.split('\\')
         filename = str(output_folder_list[2].split('.')[0])

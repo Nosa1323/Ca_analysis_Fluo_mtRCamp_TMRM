@@ -157,3 +157,8 @@ cython_debug/
 протокол.docx
 *.docx
 *.pptx
+*.parquet
+transofrm_to_excel/ATP_xRod_Ctrl.ipynb
+transofrm_to_excel/Fluo_mtRCaMP_check_lambda.ipynb
+transofrm_to_excel/Local_lambda_ctrl_fluo_mtRCaMP.ipynb
+transofrm_to_excel/Local_mPS_fluo_mtRCaMP.ipynb
